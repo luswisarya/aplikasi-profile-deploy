@@ -1,0 +1,12 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: simple-port/index.html
+  upload: simple-port/index.html
+
+- url: /(.*)
+  static_files: simple-port/\1
+  upload: simple-port/(.*)
