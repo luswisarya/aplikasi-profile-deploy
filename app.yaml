@@ -4,9 +4,9 @@ threadsafe: true
 
 handlers:
 - url: /
-  static_files: simple-port/index.html
-  upload: simple-port/index.html
+  static_files: www/index.html
+  upload: www/index.html
 
 - url: /(.*)
-  static_files: simple-port/\1
-  upload: simple-port/(.*)
+  static_files: www/\1
+  upload: www/(.*)
